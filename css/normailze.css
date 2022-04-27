@@ -13,6 +13,39 @@
     -webkit-text-size-adjust: 100%; /* 2 */
   }
   
+  img {
+    width: auto;
+    height: auto;
+    max-width: 100%;
+  }
+  
+  .page-projects {
+    display: grid;
+    grid-gap: 1rem;
+    grid-template-columns: 1fr;
+    padding: 0 5%;
+  }
+  
+  /* ====================================
+  Medium screen breakpoint */
+  @media screen and (min-width: 600px) {
+    .page-projects {
+      grid-template-columns: 1fr 1fr;
+      padding: 0 10%;
+    }
+  }
+  /* ============ end min-width 600px =============== */
+  
+  /* ====================================
+  large screen breakpoint */
+  @media screen and (min-width: 1200px) {
+    .page-projects {
+      grid-template-columns: repeat(4, 1fr);
+      padding: 0 25%;
+    }
+  }
+  /* ============ end min-width 1200px =============== */
+
   /* Sections
      ========================================================================== */
   
