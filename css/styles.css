@@ -172,3 +172,27 @@ See for more info: https://codepen.io/profstein/pen/mrMLRj
         }
       }
       /* ============ end min-width 1200px =============== */
+       .page-projects{
+        padding: 50px;
+        background-color: #ccc;
+        margin: 1rem;
+      }
+      .projects{
+        display: grid;
+        grid-template-columns: 1fr;
+      }
+      
+      @media screen and (min-width: 600px){
+        .projects{
+          grid-template-columns: repeat(1, 1fr);
+        }
+      }
+      
+      @media screen and (min-width: 1200px){
+        .projects{
+          grid-template-columns: repeat(4, 1fr);
+        }
+      }
+      
+
+      
