@@ -146,7 +146,7 @@ See for more info: https://codepen.io/profstein/pen/mrMLRj
         max-width: 100%;
       }
       
-      .page-projects {
+      .page-projects, .intro, .action1, .action2, .feature, .announcement{
         display: grid;
         grid-gap: 1rem;
         grid-template-columns: 1fr;
@@ -193,6 +193,26 @@ See for more info: https://codepen.io/profstein/pen/mrMLRj
           grid-template-columns: repeat(4, 1fr);
         }
       }
+      .intro, .action1, .action2, .feature, .announcement{
+        padding: 50px;
+        background-color: #ccc;
+        margin: 1rem;
+      }
+      .features{
+        display: grid;
+        grid-template-columns: 1fr;
+      }
       
+      @media screen and (min-width: 600px){
+        .features{
+          grid-template-columns: repeat(2, 1fr);
+        }
+      }
+      
+      @media screen and (min-width: 1200px){
+        .features{
+          grid-template-columns: repeat(3, 1fr);
+        }
+      }
 
       
