@@ -141,9 +141,12 @@ See for more info: https://codepen.io/profstein/pen/mrMLRj
     Add your styles below.
     ========================== */
 
-    @import url('https://fonts.googleapis.com/css2?family=Arima+Madurai:wght@200&display=swap');
+       
+    @import url('https://fonts.googleapis.com/css2?family=League+Script&display=swap');
+
+    @import url('https://fonts.googleapis.com/css2?family=League+Script&family=Sacramento&display=swap');
     /* UTILITIES */
- @import url('https://fonts.googleapis.com/css2?family=Arima+Madurai:wght@200&display=swap');
+ 
 
  * {
   margin: 0;
@@ -173,7 +176,9 @@ See for more info: https://codepen.io/profstein/pen/mrMLRj
  }
  /* LOGO */
  .logo {
+    font-family: 'Sacramento', cursive;
   font-size: 32px;
+  
  }
  /* NAVBAR MENU */
  .menu {
@@ -215,5 +220,13 @@ See for more info: https://codepen.io/profstein/pen/mrMLRj
  .services:hover .dropdown {
   display: block;
  }
+
+ .footer-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
  
     
