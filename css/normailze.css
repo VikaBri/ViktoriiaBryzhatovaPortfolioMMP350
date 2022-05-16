@@ -22,10 +22,33 @@
   .page-projects {
     display: grid;
     grid-gap: 1rem;
-    grid-template-columns: 1fr;
+    grid-template-columns: 4fr;
+    grid-template-columns: repeat(4, 1fr);
     padding: 0 5%;
   }
+  .intro, .action1, .action2, .feature, .announcement{
+    padding: 50px;
+    background-color: #ccc;
+    margin: 1rem;
+  }
+  .features{
+    display: grid;
+    grid-template-columns: 1fr;
+  }
   
+  @media screen and (min-width: 600px){
+    .features{
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  
+  @media screen and (min-width: 1200px){
+    .features{
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+  
+
   /* ====================================
   Medium screen breakpoint */
   @media screen and (min-width: 600px) {
