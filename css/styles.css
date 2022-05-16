@@ -141,11 +141,6 @@ See for more info: https://codepen.io/profstein/pen/mrMLRj
     Add your styles below.
     ========================== */
 
-    .intro, .action1, .action2, .feature, .announcement{
-        padding: 50px;
-        background-color: #ccc;
-        margin: 1rem;
-      }
-      
-      }
-      
+    @import url('https://fonts.googleapis.com/css2?family=Arima+Madurai:wght@200&display=swap');
+    
+    

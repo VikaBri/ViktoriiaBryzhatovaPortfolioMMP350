@@ -349,29 +349,27 @@
   } 
  /**started editing here?**/
 
- .intro, .action1, .action2, .feature, .announcement{
+ .intro, .action1, .action2, .page-projects, .announcement{
   padding: 50px;
   background-color: #ccc;
   margin: 1rem;
 }
-.features{
+.page-projects{
   display: grid;
   grid-template-columns: 1fr;
 }
 
 @media screen and (min-width: 600px){
-  .features{
+  .page-projects{
     grid-template-columns: repeat(2, 1fr);
   }
 }
 
 @media screen and (min-width: 1200px){
-  .features{
+  .page-projects{
     grid-template-columns: repeat(3, 1fr);
   }
 }
 
- 
- 
- 
-      
+
+
