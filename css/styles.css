@@ -140,79 +140,12 @@ See for more info: https://codepen.io/profstein/pen/mrMLRj
     YOUR STYLES
     Add your styles below.
     ========================== */
-    img {
-        width: auto;
-        height: auto;
-        max-width: 100%;
-      }
-      
-      .page-projects, .intro, .action1, .action2, .feature, .announcement{
-        display: grid;
-        grid-gap: 1rem;
-        grid-template-columns: 1fr;
-        padding: 0 5%;
-      }
-      
-      /* ====================================
-      Medium screen breakpoint */
-      @media screen and (min-width: 600px) {
-        .page-projects {
-          grid-template-columns: 1fr 1fr;
-          padding: 0 10%;
-        }
-      }
-      /* ============ end min-width 600px =============== */
-      
-      /* ====================================
-      large screen breakpoint */
-      @media screen and (min-width: 1200px) {
-        .page-projects {
-          grid-template-columns: repeat(4, 1fr);
-          padding: 0 25%;
-        }
-      }
-      /* ============ end min-width 1200px =============== */
-       .page-projects{
-        padding: 50px;
-        background-color: #ccc;
-        margin: 1rem;
-      }
-      .projects{
-        display: grid;
-        grid-template-columns: 1fr;
-      }
-      
-      @media screen and (min-width: 600px){
-        .projects{
-          grid-template-columns: repeat(1, 1fr);
-        }
-      }
-      
-      @media screen and (min-width: 1200px){
-        .projects{
-          grid-template-columns: repeat(4, 1fr);
-        }
-      }
-      .intro, .action1, .action2, .feature, .announcement{
-        padding: 50px;
-        background-color: #ccc;
-        margin: 1rem;
-      }
-      .features{
-        display: grid;
-        grid-template-columns: 1fr;
-      }
-      
-      @media screen and (min-width: 600px){
-        .features{
-          grid-template-columns: repeat(2, 1fr);
-        }
-      }
-      
-      @media screen and (min-width: 1200px){
-        .features{
-          grid-template-columns: repeat(3, 1fr);
-        }
-      }
 
+    .intro, .action1, .action2, .feature, .announcement{
+        padding: 50px;
+        background-color: #ccc;
+        margin: 1rem;
+      }
+      
+      }
       
