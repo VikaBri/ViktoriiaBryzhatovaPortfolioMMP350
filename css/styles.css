@@ -10,7 +10,8 @@
 @import url('https://fonts.googleapis.com/css?family=Rubik:400,400i,700,700i');
 @import url('https://fonts.googleapis.com/css?family=Barlow+Condensed:400,500');
 */
-
+@import url('https://fonts.googleapis.com/css2?family=Cabin&family=League+Script&family=Sacramento&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cabin&display=swap');
 /* The html and body selectors below set the base type for the entire page */
 html {
     font-size: 1em;
@@ -142,11 +143,7 @@ See for more info: https://codepen.io/profstein/pen/mrMLRj
     ========================== */
 
        
-    @import url('https://fonts.googleapis.com/css2?family=League+Script&display=swap');
-
-    @import url('https://fonts.googleapis.com/css2?family=League+Script&family=Sacramento&display=swap');
-    /* UTILITIES */
- 
+   
 
  * {
   margin: 0;
@@ -154,7 +151,7 @@ See for more info: https://codepen.io/profstein/pen/mrMLRj
   box-sizing: border-box;
  }
  body {
-  font-family: 'Arima Madurai', cursive;
+  font-family: 'Cabin', sans-serif;
  }
  a {
   text-decoration: none;
@@ -228,5 +225,17 @@ See for more info: https://codepen.io/profstein/pen/mrMLRj
     flex-direction: column;
     text-align: center;
 }
+
+/* Centered text */
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+    background-color: #1c39567f;
+    
+  }
  
     
