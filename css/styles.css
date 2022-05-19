@@ -443,7 +443,7 @@ See for more info: https://codepen.io/profstein/pen/mrMLRj
 
   .intro{
     padding: 30px;
-    background-color: rgba(11, 3, 30, 0.311);
+    background-color: rgba(11, 4, 30, 0.352);
     /*margin: 1rem;*/
   }
   .features{
@@ -463,3 +463,93 @@ See for more info: https://codepen.io/profstein/pen/mrMLRj
     }
   }
   
+  /* LOGOS */
+
+  
+  /* Float images in the intros */
+.logobox img{
+    border: 1px solid rgba(1, 1, 1, 0.283);
+    border-radius: 4px;
+    padding: 5px;
+    width: 400px;
+background-color: #0e20337f;
+float: left; 
+margin: 0 1rem 1rem 0;
+
+}
+
+.box{
+
+clear: both;
+overflow: auto;
+}
+
+/* GRID LAYOUT */
+.logos{
+display: grid;
+position: absolute;
+text-align:center;
+top: 15%;
+/*left: 50%;
+transform: translate(-50%, -50%);*/
+font-size: 20px;
+grid-template-columns: 1fr;
+/*   special responsive columns (from una kravets 1 line layouts) */
+grid-template-rows: fit-content(40%);
+grid-gap: 1rem;
+}
+
+
+
+/*@media (min-width: 768px){
+body{
+  grid-template-columns: 1fr 175px;
+  grid-gap: 1rem;
+}
+
+/* end (min-width: 768px) */
+
+/* flexbox styling */
+.log{
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+
+/*   justify-content: center;
+align-items: center; */
+}
+
+
+
+/* =====================================================
+ GENERAL STYLING
+ makes boxes orange and changes default font
+ not necessary for teh layout, just makes it look nicer
+ ===================================================== */
+
+/* General Typography */
+body{
+font-family: sans-serif;
+}
+h1{
+font-size: 3rem;
+}
+p{
+font-size:1.5rem;
+}
+
+/*basic color to see box */
+.log{
+/*background-color: #5b7aa171;*/
+padding: 70px;
+}
+
+.logobox{
+padding: 50px;
+background-color: rgba(11, 4, 30, 0.352);
+/*margin: 1rem;*/
+}
+.features{
+display: grid;
+grid-template-columns: 1fr;
+}
