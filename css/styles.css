@@ -47,6 +47,23 @@ h5,
 h6 {
     font-weight: 500;
     font-family: serif;
+    color: rgb(255, 255, 255);
+		text-align: center;
+    font-family:'Cabin', sans-serif;
+}
+
+p1{
+    color: rgb(255, 255, 255);
+	font-size: 17px;
+	text-align: center;
+    font-family:'Cabin', sans-serif;
+}
+
+p2{
+    color: rgb(255, 255, 255);
+	font-size: 15px;
+	text-align: center;
+    font-family:'Cabin', sans-serif;
 }
 
 
@@ -66,16 +83,21 @@ h2 {
 }
 
 h3 {
-    font-size: 2.25em;
-    line-height: 1;
-    margin: 1.5em 0 0.25em 0;
+    color: rgb(255, 255, 255);
+	font-size: 20px;
+	text-align: center;
+    font-family:'Cabin', sans-serif;
+
 }
 
 h4 {
-    font-size: 1.5em;
+    color: rgb(255, 255, 255);
+	font-size: 18px;
+	text-align: center;
+    font-family:'Cabin', sans-serif;
     line-height: 1;
-    margin: 1.5em 0 0.5em 0;
-    font-weight: 400;
+    margin: 1.5em 0 1.5em 1.5em;
+    
 }
 
 h5 {
@@ -103,6 +125,8 @@ h7 {
 	text-align: center;
     text-transform: capitalize;
     }
+
+
 
 /*  ==========================
     BASE RESPONSIVE
@@ -341,10 +365,10 @@ See for more info: https://codepen.io/profstein/pen/mrMLRj
 
   /* Float images in the intros */
 .intro img{
-        border: 1px solid #ddd;
+        border: 1px solid rgba(1, 1, 1, 0.283);
         border-radius: 4px;
         padding: 5px;
-        width: 700px;
+        width: 600px;
 
     float: left; 
     margin: 0 1rem 1rem 0;
@@ -352,7 +376,7 @@ See for more info: https://codepen.io/profstein/pen/mrMLRj
   }
   
   .box{
-    outline: 1px solid black;
+    
     clear: both;
     overflow: auto;
   }
@@ -360,17 +384,21 @@ See for more info: https://codepen.io/profstein/pen/mrMLRj
   /* GRID LAYOUT */
   .boxes{
     display: grid;
-    
+    position: absolute;
+    text-align:center;
+    top: 15%;
+    /*left: 50%;
+    transform: translate(-50%, -50%);*/
+    font-size: 20px;
     grid-template-columns: 1fr;
   /*   special responsive columns (from una kravets 1 line layouts) */
   grid-template-rows: fit-content(40%);
-
     grid-gap: 1rem;
   }
   
 
  
-  @media (min-width: 768px){
+  /*@media (min-width: 768px){
     body{
       grid-template-columns: 1fr 175px;
       grid-gap: 1rem;
@@ -409,14 +437,14 @@ See for more info: https://codepen.io/profstein/pen/mrMLRj
   
   /*basic color to see box */
   .box{
-    background-color: #5b7aa171;
-    padding: 1rem;
+    /*background-color: #5b7aa171;*/
+    padding: 30px;
   }
 
-  .intro, .action1, .action2, .feature, .announcement{
-    padding: 50px;
-    background-color: #ccc;
-    margin: 1rem;
+  .intro{
+    padding: 30px;
+    background-color: rgba(11, 3, 30, 0.311);
+    /*margin: 1rem;*/
   }
   .features{
     display: grid;
