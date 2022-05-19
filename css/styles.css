@@ -161,6 +161,9 @@ See for more info: https://codepen.io/profstein/pen/mrMLRj
  }
  /* NAVBAR STYLING STARTS */
  .navbar {
+    /*border: 2px solid black;*/
+    width: 100%;
+    position: relative;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -173,13 +176,6 @@ See for more info: https://codepen.io/profstein/pen/mrMLRj
  }
  /* LOGO */
 
-
-
- .logo {
-  font-family: 'Sacramento', cursive;
-  font-size: 32px;
- }
-
  .animate-charcter
  {
    font-family: 'Sacramento', cursive;
@@ -190,22 +186,30 @@ See for more info: https://codepen.io/profstein/pen/mrMLRj
      #4b67d3 67%,
      #fff800 100%
    );
-   background-size: auto auto;
-   background-clip: border-box;
-   background-size: 200% auto;
+   
+  /* background-size: auto auto;  
+   background-clip: inherit;*/
+   background-size: 200% auto; 
    color: #fff;
    background-clip: text;
    text-fill-color: transparent;
    -webkit-background-clip: text;
    -webkit-text-fill-color: transparent;
    animation: textclip 2s linear infinite;
-   display: inline-block;
-       font-size: 32px;
+   /*display: inline-block;*/
+       font-size: 34px;
+       text-align: center;
+      
+           
  }
- 
+
+
+  
+  
  @keyframes textclip {
    to {
      background-position: 200% center;
+     
    }
  }
 
