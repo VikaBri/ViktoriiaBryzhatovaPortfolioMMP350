@@ -85,6 +85,10 @@ h5 {
     }
 
 h6 {
+    color: rgb(255, 255, 255);
+	font-size: 20px;
+	text-align: center;
+    font-family:'Cabin', sans-serif;
     font-size: 1em;
     line-height: 1.5;
     margin: 1em 0 0 0;
@@ -321,3 +325,12 @@ See for more info: https://codepen.io/profstein/pen/mrMLRj
     }
   }
 
+  .pagename{
+    position: absolute;
+    text-align:center;
+    top: 4%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+  }
