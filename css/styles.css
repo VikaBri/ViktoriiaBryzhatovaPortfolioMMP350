@@ -334,3 +334,104 @@ See for more info: https://codepen.io/profstein/pen/mrMLRj
     font-size: 20px;
     color: rgb(255, 255, 255);
   }
+
+  /*ILLUSTRATION PAGE*/
+  
+
+
+  /* Float images in the intros */
+.intro img{
+        border: 1px solid #ddd;
+        border-radius: 4px;
+        padding: 5px;
+        width: 700px;
+
+    float: left; 
+    margin: 0 1rem 1rem 0;
+    
+  }
+  
+  .box{
+    outline: 1px solid black;
+    clear: both;
+    overflow: auto;
+  }
+  
+  /* GRID LAYOUT */
+  .boxes{
+    display: grid;
+    
+    grid-template-columns: 1fr;
+  /*   special responsive columns (from una kravets 1 line layouts) */
+  grid-template-rows: fit-content(40%);
+
+    grid-gap: 1rem;
+  }
+  
+
+ 
+  @media (min-width: 768px){
+    body{
+      grid-template-columns: 1fr 175px;
+      grid-gap: 1rem;
+    }
+   
+  /* end (min-width: 768px) */
+  
+  /* flexbox styling */
+  .box{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
+  /*   justify-content: center;
+    align-items: center; */
+  }
+  
+  
+  
+  /* =====================================================
+     GENERAL STYLING
+     makes boxes orange and changes default font
+     not necessary for teh layout, just makes it look nicer
+     ===================================================== */
+  
+  /* General Typography */
+  body{
+    font-family: sans-serif;
+   }
+  h1{
+    font-size: 3rem;
+  }
+  p{
+    font-size:1.5rem;
+  }
+  
+  /*basic color to see box */
+  .box{
+    background-color: #5b7aa171;
+    padding: 1rem;
+  }
+
+  .intro, .action1, .action2, .feature, .announcement{
+    padding: 50px;
+    background-color: #ccc;
+    margin: 1rem;
+  }
+  .features{
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  
+  @media screen and (min-width: 600px){
+    .features{
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  
+  @media screen and (min-width: 1200px){
+    .features{
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+  
